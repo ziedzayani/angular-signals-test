@@ -1,0 +1,22 @@
+<mat-toolbar color="primary">
+  <span>Angular Signal Example </span>
+  <span class="example-spacer"></span>
+</mat-toolbar>
+<ng-container *ngIf="urlsMapSig().size > 0">
+  <mat-progress-bar mode="indeterminate" ></mat-progress-bar>
+</ng-container>
+
+<div class="panel">
+  <section>
+    <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
+      <button mat-raised-button color="primary" (click)="getMovies()">Get All Movies</button>
+      <button mat-raised-button color="primary" (click)="clearMOvies()">Remove All Movies</button>
+    </div>
+  </section>
+
+  <ul>
+    <li *ngFor="let movie of moviesSig()"> 
+        <span>{{ movie.name}}</span> : <span style="float: right;">{{ movie.releaseYear}}</span>
+      </li>
+  </ul>
+</div>
