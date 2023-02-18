@@ -1,7 +1,3 @@
-## In this application, I used Signal to control the dynamic display of a progress bar when there are ongoing HTTP calls, and I also used it to display the results of an HTTP call. I mocked the backend and used the delay operator to simulate the delay of an HTTP response,
-
-## I find that using Signal simplifies works a lot since there's no need to subscribe and unsubscribe, or use next to notify subscribers, etc. This is in contrast to using BehaviorSubject
-
 # DynamincLoading
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.6.
