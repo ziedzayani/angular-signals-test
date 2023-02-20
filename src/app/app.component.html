@@ -2,7 +2,9 @@
   <span>Angular Signal Example </span>
   <span class="example-spacer"></span>
 </mat-toolbar>
-<ng-container *ngIf="urlsMapSig().size > 0">
+<!-- we can user this , without using computed-->
+<!--<ng-container *ngIf="urlsMapSig().size > 0">-->
+<ng-container *ngIf="isLoadingSig()">
   <mat-progress-bar mode="indeterminate" ></mat-progress-bar>
 </ng-container>
 
