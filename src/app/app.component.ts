@@ -33,7 +33,6 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     this.urlsMapSig = this.loadingService.urlsNotResolvedSignal;
     //creates a memoizing signal, which calculates its value from the values of some number of input signals
-    //we can use this in the template, i added this ligne just for show you how using computed
     this.isLoadingSig = computed(() => this.urlsMapSig().size > 0);
     effect(() =>
       console.log(
