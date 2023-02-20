@@ -11,7 +11,7 @@ const MOVIES : Movie[] = [
 
 
 export function mockBackendInterceptor(req: HttpRequest<unknown>, next: HttpHandlerFn): Observable<HttpEvent<unknown>> {
-    console.log(`Request is on its way to ${req.url}`);
+    //console.log(`Request is on its way to ${req.url}`);
   
     return of(new HttpResponse({ status: 200, body: MOVIES })).pipe(delay(2000));
   }

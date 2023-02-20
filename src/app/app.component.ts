@@ -29,7 +29,6 @@ export class AppComponent implements OnInit{
 
   getMovies(){
     this.movieService.getMovies().subscribe(movies => {
-      console.log(movies);
       this.moviesSig.set(movies);
     });
   }
